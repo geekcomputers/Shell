@@ -1,16 +1,14 @@
 #!/bin/bash
 
-# Name					: oracle_connections.sh
-
+# Script Name		: oracle_connections.sh
 # Author				: Craig Richards
 # Created				: 30-May-2012
 # Last Modified		:
 # Version				: 1.0
+
 # Modifications		:
 
 # Description			: This will show all of the client connections to the database
-
-# Instructions		: oracle_connections.sh $ORACLE_SID
 
 #################################
 # Start of procedures/functions #
