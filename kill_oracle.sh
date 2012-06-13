@@ -1,16 +1,14 @@
 #!/bin/bash
 
-# Name					: kill_oracle.sh
-
+# Script Name		: kill_oracle.sh
 # Author				: Craig Richards
 # Created				: 31-May-2012
 # Last Modified		:
 # Version				: 1.0
+
 # Modifications		:
 
 # Description			: This will kill all the oracle processes associated with a given sid
-
-# Instructions		: kill_oracle.sh $ORACLE_SID
 
 #################################
 # Start of procedures/functions #
