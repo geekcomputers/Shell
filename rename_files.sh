@@ -1,17 +1,16 @@
 #!/bin/bash
 
-# Script Name    : rename_files.sh
-
-# Author         : Craig Richards
-# Created        : 28-March-2012
+# Script Name	: rename_files.sh
+# Author			: Craig Richards
+# Created			: 28-March-2012
+# Last Modified	:
+# Version			: 1.0
 
 # Modifications  :
 
-# Description    : This will rename all of the files in a directory by removing the word you pass to it
-#		 : I use this when doing a PITR recovery from one database to a test database.
-#		 : PLEASE NOTE YOU MUST BE CAREFUL RUNNING THIS SCRIPT, IF YOU RUN IT IN ERROR THAT'S YOUR MISTAKE
-
-# Instructions   : rename_files.sh WORD_TO_REMOVE
+# Description		: This will rename all of the files in a directory by removing the word you pass to it
+#						: I use this when doing a PITR recovery from one database to a test database.
+#						: PLEASE NOTE YOU MUST BE CAREFUL RUNNING THIS SCRIPT, IF YOU RUN IT IN ERROR THAT'S YOUR MISTAKE
 
 #################################
 # Start of procedures/functions #
