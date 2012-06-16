@@ -1,17 +1,15 @@
 #!/bin/ksh
 
-# Script Name : current_users.ksh
+# Script Name	: current_users.ksh
+# Author 			: Craig Richards(CR)
+# Created 			: 21 July 2002
+# Last Modified	:
+# Version			: 1.`
 
-# Author : Craig Richards(CR)
+# Modifications	: 31-July-2002 (CR) Re-formatted the script to be inline with the template 
+# 						: 15-October-2002 (CR) Changed user script to identify more information
 
-# Created : 21 July 2002
-
-# Modifications : 31-July-2002 (CR) Re-formatted the script to be inline with the template 
-# 15-October-2002 (CR) Changed user script to identify more information
-
-# Description : This will gather information about the users that are currently attached to the database.
-
-# Instructions : current_users
+# Description		: This will gather information about the users that are currently attached to the database.
 
 #################################
 # Start of procedures/functions #
@@ -55,9 +53,10 @@ SALIST='dba@whatever.com'
 
 ORATAB_LOC=/etc/oratab ; export ORATAB_LOC
 ORACLE_HOME=`sed /#/d ${ORATAB_LOC} | grep $ORACLE_SID | awk -F: '{print $2}'` ; export ORACLE_HOME
+
 {
-funct_get_users
-funct_mail_file
+	funct_get_users
+	funct_mail_file
 }
 
 ## End of Script
