@@ -1,16 +1,14 @@
 #!/bin/ksh
 
-# Script Name : unix_users_to_sql.ksh
+# Script Name	: unix_users_to_sql.ksh
+# Author			: Craig Richards
+# Created			: 27 August 2010
+# Last Modified	:
+# Version			: 1.0
 
-# Author  : Craig Richards
-# Created : 
+# Modifications 	:
 
-# Modifications :
-
-# Description : Export UNIX users to sql, you can change the last line if you want the output to go to a file 
-#             : rather than be inserted straight into the database
-
-# Instructions : unix_users_to_sql.ksh
+# Description 	: Export UNIX users to sql, you can change the last line if you want the output to go to a file, rather than be inserted straight into the database
 
 #################################
 # Start of procedures/functions #
