@@ -1,15 +1,14 @@
 #!/bin/ksh
 
-# Script Name : loginlog.ksh
+# Script Name	: loginlog.ksh
+# Author 			: Craig Richards
+# Created 			: 8 November 2004
+# Last Modified	:
+# Version			: 1.0
 
-# Author : Craig Richards
-# Created : 08-Nov-2004
+# Modifications	: 
 
-# Modifications :
-
-# Description : This creates the file which tracks failed login attempts after five failed attempts
-
-# Instructions : loginlog.ksh
+# Description		: This creates the file which tracks failed login attempts after five failed attempts
 
 #################################
 # Start of procedures/functions #
