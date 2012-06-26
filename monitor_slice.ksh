@@ -1,15 +1,14 @@
 #!/bin/ksh
 
-# Script Name : monitor_slice.ksh 
+# Script Name		: monitor_slice.ksh 
+# Author				: Craig Richards
+# Created				: 14-June-2006 
+# Last Modified		:
+# Version				: 1.0
 
-# Author : Craig Richards
-# Created : 14-June-2006 
+# Modifications		:
 
-# Modifications :
-
-# Description : Shows you the space for a single slice
-
-# Instructions : monitor_slice.ksh 
+# Description			: Shows the slice, as well as the GB of space used, as well as the space left, it will loop round and round until you cancel it running
 
 #################################
 # Start of procedures/functions #
