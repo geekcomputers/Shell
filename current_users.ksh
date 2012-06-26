@@ -4,7 +4,7 @@
 # Author 			: Craig Richards(CR)
 # Created 			: 21 July 2002
 # Last Modified	:
-# Version			: 1.`
+# Version			: 1.0
 
 # Modifications	: 31-July-2002 (CR) Re-formatted the script to be inline with the template 
 # 						: 15-October-2002 (CR) Changed user script to identify more information
