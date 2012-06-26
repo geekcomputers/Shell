@@ -1,15 +1,14 @@
 #!/bin/ksh
 
-# Script Name 	: 
+# Script Name	: test_network.ksh
+# Author			: Craig Richards
+# Created 			: 27 August 2010
+# Last Modified	:
+# Version 			: 1.0
 
-# Author 	: Craig Richards
-# Created 	: 
-
-# Modifications :
+# Modifications 	:
 
 # Description 	:  A quick network test to test the network
-
-# Instructions 	: 
 
 #################################
 # Start of procedures/functions #
