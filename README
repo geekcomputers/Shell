@@ -1,0 +1,59 @@
+Here is some more detailed information about the scripts I have written.  I do not consider myself a programmer, I create these little programs as experiments to have a play with the language, or to solve a problem for myself.  I would gladly accept pointers from others to improve the code and make it more efficient, or simplify the code.  If you would like to make any comments then please feel free to email me at craig@geekcomputers.co.uk.
+
+In the scripts the comments etc are lined up correctly when they are viewed in Notepad++ or vi. This is what I use to code Shell scripts.
+
+arch_check.ksh - This script checks the archive location for any log files that have not yet been compressed and compresses them.
+
+backup.ksh - Backup script for root disk
+
+check_alert_log.sh - Start/stop the perl script to monitor the Oracle Alert Log
+
+check_oracle.ksh - This script checks the pmon and the listener processes are running on the server
+
+coalesce.ksh - This script gets the list of the tablespaces within the database and then coalesces them
+
+create_me.ksh - I use this to create me on new Solaris builds
+
+current_users.ksh - This will gather information about the users that are currently attached to the database.
+
+exp_using_pipes.ksh - An example of running an export, compressing on the fly using a pipe
+
+homedir_backup.ksh - Backs up the user that is running the script home directory, and copy it to another machine
+
+kill_oracle.sh - This will kill all the oracle processes associated with a given sid
+
+last_5_mins.sh - Captures just the last five minutes of a given logfile
+
+loginlog.ksh - This creates the file which tracks failed login attempts after five failed attempts
+
+modified_today.sh - Lists all the files that have been modified that day 
+
+monitor_slice.ksh - Shows the slice, as well as the GB of space used, as well as the space left, it will loop round and round until you cancel it running
+
+myping.sh - Prefixes the ping command with a date stamp, you then prove when it was run, works on Solaris and Linux
+
+mysql_backup.sh - Backup MySQL database, either the full database or just a single database
+
+nddchecker.ksh - Get Network Card information on Solaris
+
+network.ksh - Get Network Information
+
+newuser.ksh - A simple script to create a new OS account
+
+oracle_connections.sh - This will show all of the client connections to the database
+
+rename_files.sh - This will rename all of the files in a directory by removing the word you pass to it
+
+show_eri.sh - Get network information for eri cards
+
+show_hme.sh - Get network information for hme cards
+
+test_network.ksh - A quick network test to test the network
+
+transfer_script.sh - This will send a given script to a certain server once prompted, if it can't find the script it searches for scripts with a similar name
+
+unix_users_to_sql.ksh - Export UNIX users to sql, you can change the last line if you want the output to go to a file, rather than be inserted straight into the database
+
+vosstat.sh - Gather OS statistics to place in to the database
+
+world_writable.ksh - Gather OS statistics to place in to the database
