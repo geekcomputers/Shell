@@ -6,6 +6,8 @@ arch_check.ksh - This script checks the archive location for any log files that 
 
 backup.ksh - Backup script for root disk
 
+batch_file_rename.sh - This will batch rename all files from one extension to another
+
 check_alert_log.sh - Start/stop the perl script to monitor the Oracle Alert Log
 
 check_oracle.ksh - This script checks the pmon and the listener processes are running on the server
