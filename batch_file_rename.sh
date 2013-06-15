@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Script Name	: batch_file_rename.sh
-# Author	: Craig Richards
-# Created	: 06-August-2012
+# Author			: Craig Richards
+# Created			: 06-August-2012
 # Last Modified	:
-# Version	: 1.0
+# Version			: 1.0
 
 # Modifications	:
 
-# Description	: This will batch rename all files from one extension to another
+# Description		: This will batch rename all files from one extension to another
 
 #################################
 # Start of procedures/functions #
