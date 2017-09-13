@@ -10,16 +10,25 @@
 
 # Description		: This will show all OS accounts that don't have a password set.
 
-if [[ `uname -s` == 'Linux' ]]; then
-  nopass=`passwd -Sa | grep NP | awk '{print $1}'`
-elif [[ `uname -s` == 'SunOS' ]]; then
-   nopass=`passwd -sa | grep NP | awk '{print $1}'`
+get_user_names(){
+  # Unless you have a weird setup. Using the regex from: man useradd(8)
+  nopass=`passwd -${1}a | grep -o "^[a-z_][a-z0-9_-]*[$]\? NP"`
+
+  for i in ${nopass/ /_}
+  {
+    nopassnames="${nopassnames:- } $i"
+  }
+}
+
+if [[ "$OSTYPE" == *linux-gnu* ]]; then
+  get_user_names S
+elif [[ "$OSTYPE" == *sunos* ]]; then
+  get_user_names s
 fi
 
-  if [ -z "$nopass" ]
-    then
-      echo "Good - All user accounts have a password"
-    else
-      echo "Not Good - $nopass has no password set"
-  fi
-
+if [ -z "$nopassnames" ]
+  then
+    echo "Good - All user accounts have a password"
+  else
+    echo "Not Good - ${nopassnames//_NP/} has no password set"
+fi
