@@ -12,7 +12,7 @@
 
 get_user_names(){
   # Unless you have a weird setup. Using the regex from: man useradd(8)
-  nopass=`passwd -${1}a | grep -o "^[a-z_][a-z0-9_-]*[$]\? NP"`
+  nopass=`passwd -${1}a | grep -o "^.* NP"`
 
   for i in ${nopass/ /_}
   {
@@ -21,6 +21,7 @@ get_user_names(){
 }
 
 if [[ "$OSTYPE" == *linux-gnu* ]]; then
+  # NOTE: I required root access for the -a flag on my Ubuntu-based setup of Linux.
   get_user_names S
 elif [[ "$OSTYPE" == *sunos* ]]; then
   get_user_names s
@@ -30,5 +31,8 @@ if [ -z "$nopassnames" ]
   then
     echo "Good - All user accounts have a password"
   else
-    echo "Not Good - ${nopassnames//_NP/} has no password set"
+    # Might be handy to add a loop to include the UID of each user.
+    echo "ERROR: The users listed below have no password set:"\
+         "       ${nopassnames//_NP/}"
+    exit 1
 fi
