@@ -3,7 +3,7 @@
 # Script Name 	: world_writable.ksh 
 # Author 			: Craig Richards
 # Created			: 28-November-2007 
-# Last Modified	: 28 Janurary 2008
+# Last Modified	: 28 January 2008
 # Version			: 1.1
 
 # Modifications 	: 28th-Jan-2008 - CR - Added the function to check the user ROOT is running the program

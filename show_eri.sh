@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "show_hme, v1.5. Stacey Marshall, 16 April 1998"
 # Display HME/network parameters.
-# Based on get_hme_paramters, Version 2 by Mark F 26/2/97
+# Based on get_hme_parameters, Version 2 by Mark F 26/2/97
 #
 #
 #       ******************************************************
@@ -44,7 +44,7 @@ get_ndd_info(){
 	 substr(tab,length(ans),50),$1,$4)}'
 }
 
-# 16/Feb/98 : 1.5:  INSTANCES should be space seperated....
+# 16/Feb/98 : 1.5:  INSTANCES should be space separated....
 # 11/Feb/98 : 1.4:  Ultra platform reports onboard hme as 'network'!
 # get_instances: find the instance numbers of hme cards installed.
 get_instances(){
@@ -182,7 +182,7 @@ for instance in $INSTANCES
 	$ECHO "or if the interface is unused ( IE: Not plumbed in )."
 	$ECHO "Try snooping the device to inititalise it."
 
-	$ECHO "\nLink Paremeters.\n\n"
+	$ECHO "\nLink Parameters.\n\n"
 	set_instance $instance
 	get_ndd_info link_status "The link is DOWN" "The link is UP"
 	get_ndd_info link_speed "Speed = 10Mb/S" "Speed = 100Mb/S"
