@@ -266,7 +266,7 @@ do
  num=$(echo $LINK | sed 's/[a-z,A-Z]//g')
 
 # Here we reference the functions above to set the variables for each port which
-# will be outputed below.
+# will be outputted below.
 #
  case $type in
    bge)  Check_BGE_NIC $type $num ;;

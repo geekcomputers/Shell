@@ -31,12 +31,12 @@ funct_check_params()				# Start of the procedure
 
 funct_batch_rename()				# Start of the procedure
 {
-  old_ext_cut=`echo ${old_ext} | cut -f2 -d .` 	# Cut just the extension passed, lose the .
-  new_ext_cut=`echo ${new_ext} | cut -f2 -d .`	# Cut just the extension passed, lose the . 
+  old_ext_cut=$(echo "${old_ext}" | cut -f2 -d .) 	# Cut just the extension passed, lose the .
+  new_ext_cut=$(echo "${new_ext}" | cut -f2 -d .)	# Cut just the extension passed, lose the . 
   
   # This will carry out the rename
 
-  for file in $(ls $work_dir/*$old_ext); do mv $file `echo $file | sed 's/\(.*\.\)'$old_ext_cut'/\1'$new_ext_cut/` ; done
+  for file in "$work_dir"/*"$old_ext"; do mv "$file" "$(echo "$file" | sed 's/\(.*\.\)'"$old_ext_cut"'/\1'"$new_ext_cut"/)" ; done
 }
 
 ################
