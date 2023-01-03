@@ -16,7 +16,7 @@
 
 funct_check_params()				# Start of the procedure
 {
-  if [ "${NARG}" -lt 3 ]; then			# Check there are 3 arguments passed to the script, if not display the help 
+  if [ ${NARG} -lt 3 ]; then			# Check there are 3 arguments passed to the script, if not display the help 
     echo "Usage: $0 directory *.old_extension *.new_extension"
     exit 1					# Quit the program
   elif						# Else if
@@ -36,7 +36,7 @@ funct_batch_rename()				# Start of the procedure
   
   # This will carry out the rename
 
-  for file in $(ls "$work_dir"/*"$old_ext"); do mv "$file" $(echo "$file" | sed 's/\(.*\.\)'"$old_ext_cut"'/\1'"$new_ext_cut"/) ; done
+  for file in "$work_dir"/*"$old_ext"; do mv "$file" "$(echo "$file" | sed 's/\(.*\.\)'"$old_ext_cut"'/\1'"$new_ext_cut"/)" ; done
 }
 
 ################
